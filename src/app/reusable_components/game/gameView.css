@@ -1,0 +1,186 @@
+/* !important is to override the already defined css of the element
+in global.css  */
+
+#question-view .engaging-message {
+  justify-content: center !important;
+  margin: 0 !important;
+}
+
+#question-view .engaging-message .timer-view {
+  font-size: 45px !important;
+  text-align: center;
+  background: #729e82;
+  color: #f7f7f8 !important;
+  padding: 10px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+#question-view .engaging-message #correct_choice {
+  width: fit-content;
+  height: fit-content;
+
+  animation-duration: 600ms;
+  /* pop-up keyframes are defined in global.css because
+  its used in over views too */
+  animation-name: pop-up;
+
+  color: #00bc22;
+}
+
+#question-view .engaging-message #incorrect_choice {
+  width: fit-content;
+  height: fit-content;
+
+  animation-duration: 600ms;
+  /* pop-up keyframes are defined in global.css because
+  its used in over views too */
+  animation-name: pop-up;
+
+  color: red;
+}
+
+#question-view #question {
+  overflow: auto;
+  font-size: 0.8em;
+  width: 80%;
+  height: 100%;
+
+  /* center the text in the div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#question-view #question_number {
+  background: #fefeff;
+  text-decoration: underline;
+  padding: 5px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vw;
+
+  text-align: center;
+  color: rgba(240, 95, 109, 0.62);
+}
+
+#question-view .choose-area .col-choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  height: 100%;
+}
+
+.room-message {
+  height: 100%;
+
+  /* center the text in the div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 1.7vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #29735e97;
+}
+
+#question-view .choose-area button {
+  /* border: 1px solid black !important; */
+  text-transform: capitalize !important;
+  font-size: 2vw !important;
+  padding: 30px !important;
+  transition: 300ms;
+  height: 100% !important;
+  width: 100% !important;
+  max-height: 175px !important;
+  overflow: auto;
+}
+
+#question-view .choose-area button:hover {
+  transform: scale(1.1);
+  outline: 0;
+  border: none;
+}
+
+#question-view .choose-area button[clicked='true'][showingresponse='false'] {
+  transform: scale(0.9, 0.9);
+  background: yellow !important;
+  /* border: 5px solid black; */
+  color: black !important;
+}
+
+#question-view
+  .choose-area
+  button[clicked='true'][showingresponse='true'][revealresponse='false'] {
+  background: red !important;
+  color: white !important;
+}
+
+#question-view .choose-area button[revealresponse='true'] {
+  background-color: #00bc22;
+  color: white;
+  transform: scale(1.2);
+}
+
+#question-view #player {
+  display: none;
+}
+
+#question-view .choose-area :nth-child(1) {
+  grid-area: choice1;
+}
+#question-view .choose-area :nth-child(2) {
+  grid-area: choice2;
+}
+#question-view .choose-area :nth-child(3) {
+  grid-area: choice3;
+}
+#question-view .choose-area :nth-child(4) {
+  grid-area: choice4;
+}
+
+#question-view.container .choose-area {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr;
+  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-template-areas:
+    '. choice1 . choice2 .'
+    '. . . . .'
+    '. choice3 . choice4 .';
+}
+
+.loading-img {
+  width: 20%;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .loading-img {
+    width: 250px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container #loading-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

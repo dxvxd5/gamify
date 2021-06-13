@@ -1,0 +1,139 @@
+/* Side bar root */
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  height: 100%;
+  width: 12em;
+
+  background: linear-gradient(
+    180deg,
+    rgba(6, 129, 19, 0.35) 15.1%,
+    rgba(8, 42, 82, 0.24) 84.45%
+  );
+}
+
+/* User info in sidebar */
+#sidebar .user_info {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#sidebar .leaderboard .title {
+  background: #fefeff;
+  filter: drop-shadow(0px 2px 0px #f59ca5);
+  padding: 5px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: rgba(240, 95, 109, 0.62);
+}
+
+/* profile picture */
+#sidebar .profile_img {
+  border-radius: 50%;
+}
+
+#sidebar .name-score {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 15px;
+
+  letter-spacing: 0.02em;
+  text-align: center;
+  filter: drop-shadow(0px 2px 0px #f59ca5);
+
+  color: #fefeff;
+}
+
+#sidebar .player-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fefeff;
+}
+
+a {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* leave button */
+
+.leave_button,
+.leave_button:link,
+.leave_button:visited {
+  width: 170px;
+  text-align: center;
+  font-family: Poppins;
+  margin-bottom: 15px;
+  padding: 13px 0;
+  border: 1.7px solid #333;
+  border-radius: 5px;
+  color: #333;
+  background: rgba(190, 240, 195, 0.606);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.leave_button:hover {
+  background: rgba(31, 45, 32, 0.606);
+  border: 1px solid #333;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* leave button */
+
+.logout_button,
+.logout_button:link,
+.logout_button:visited {
+  width: 170px;
+  text-align: center;
+  font-family: Poppins;
+  position: absolute;
+  bottom: 15px;
+  padding: 13px 0;
+  border: 1.7px solid #333;
+  border-radius: 5px;
+  color: #333;
+  background: rgba(8, 42, 80, 0.023);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.logout_button:hover {
+  background: rgba(240, 95, 109, 0.62);
+  border: 1px solid #333;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}

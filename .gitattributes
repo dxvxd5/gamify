@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Make git convert all the js/jsx/json files end-of-line to LF
+*.jsx text eol=lf
+*.js text eol=lf
+*.json text eol=lf

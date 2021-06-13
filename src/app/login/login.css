@@ -1,0 +1,102 @@
+/* In global.css are defined css properties common to all pages
+  like font definitions for example.
+ */
+@import '../../assets/css/global.css';
+
+/* TODO: Delete here and in LoginView */
+/* For debugging purposes only */
+.debug {
+  /* border: 1px solid black; */
+}
+
+#login-root {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+#login-leftson {
+  /* Flex */
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(29, 185, 84, 0.28) 15.29%,
+    rgba(46, 150, 208, 0.24) 95.31%
+  );
+  overflow: hidden;
+}
+#login-leftson img {
+  padding: 50px;
+  animation-duration: 700ms;
+  /* pop-up keyframes are defined in global.css because
+  its used in over views too */
+  animation-name: pop-up;
+}
+
+#login-rightson {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#login-rightson h1 {
+  /* Font */
+  font-family: Poppins;
+  font-size: 7vw;
+
+  /* Text */
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #729e82;
+}
+
+#login-rightson button {
+  /* Flex */
+  align-self: center;
+
+  /* Font */
+  font-family: Bahnschrift;
+  font-size: 2.29vw;
+
+  /* Text */
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  /* Button box */
+  background: #729e82;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  padding: 12px 25px;
+}
+
+#login-rightson button:hover {
+  cursor: pointer;
+}
+
+#login-rightson section {
+  /* Flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  /* Font */
+  font-family: Bahnschrift;
+  font-size: 3vw;
+
+  /* Text */
+  text-align: center;
+  text-transform: capitalize;
+  color: #5b8c88;
+}
+.focus {
+  color: #b8cec0;
+  text-decoration: underline;
+}

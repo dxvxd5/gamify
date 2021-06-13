@@ -1,0 +1,41 @@
+#nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #739d86;
+  background: white url(../../assets/images/notes_background.png) no-repeat
+    fixed center;
+}
+
+#result-round-header {
+  font-size: 50px;
+  line-height: 54px;
+  padding: 30px;
+  background: #c5e9de;
+}
+#clock-view {
+  margin: 100px;
+}
+.score-board {
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  margin: 300px;
+}
+
+/* TODO: Delete this */
+@media (max-width: 400px) {
+  .app-flexParent {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    /* border: 2px solid green; */
+  }
+  .sidebar {
+    padding: 30px;
+  }
+}

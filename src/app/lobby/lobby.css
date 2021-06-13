@@ -1,0 +1,126 @@
+#lobby-view .card-select {
+  transition: 300ms;
+  outline: 0;
+  background: #779895 !important;
+  color: #f7f7f8 !important;
+}
+
+#lobby-view.container .choose-area #start-button {
+  order: 1;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  border-radius: 50%;
+  align-self: center;
+  font-size: 1.5vw;
+  transition: 300ms;
+}
+
+#lobby-view .choose-area #start-button:disabled {
+  background-color: grey;
+  /* color: ; */
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+#lobby-view.container .choose-area #start-button:hover {
+  transform: scale(1.2);
+}
+
+#lobby-view .card {
+  transition: 300ms;
+}
+
+#lobby-view .card:hover {
+  transform: scale(1.2);
+}
+
+#lobby-view .top_image {
+  border-radius: 50%;
+  width: 80px;
+}
+
+#lobby-view #player-row-container {
+  grid-area: st;
+
+  height: fit-content;
+  margin: auto;
+  overflow-x: auto;
+  /* border: 1px solid black; */
+}
+
+#lobby-view #player-row-container .message {
+  color: #03927a;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: Poppins;
+}
+
+#lobby-view #player-row-container .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 3px solid rgb(25, 173, 124);
+  border-radius: 20px;
+  background: #fff;
+}
+
+#lobby-view #player-row-container .row figcaption {
+  font-variant: small-caps;
+  font-family: Arial;
+  font-weight: bold;
+  color: #03927a;
+  text-align: center;
+  font-size: 16px;
+}
+
+#lobby-view #player-row-container .row figure {
+  animation-duration: 600ms;
+  /* pop-up keyframes are defined in global.css because
+  its used in over views too */
+  animation-name: pop-up;
+}
+
+#lobby-view #waiting_message {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#lobby-view #waiting_message p {
+  background: #fefeff;
+  /* filter: drop-shadow(0px 2px 0px #f59ca5); */
+  border: #f59ca5 solid 2px;
+  padding: 5px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+
+  text-align: center;
+  color: rgba(240, 95, 109, 0.62);
+}
+
+#lobby-view #copy_button {
+  background: #f7f7f8;
+  cursor: pointer;
+  border: 0;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.01em;
+  /* text-transform: capitalize; */
+  /* font-size: 2vw; */
+
+  color: #779895;
+
+  padding: 10px 10px;
+
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+}
