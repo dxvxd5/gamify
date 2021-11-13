@@ -23,11 +23,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 /* Use the entire viewport */
 html,
 body {
@@ -87,6 +82,17 @@ body.swal2-height-auto {
   height: 100vh;
 }
 
+#lobby-view.container {
+  grid-template-rows: 0.1fr 0.3fr 0.4fr 0.5fr 0.3fr 0.1fr;
+  grid-template-areas:
+    '.'
+    'wm'
+    'em'
+    'ca'
+    'st'
+    '.';
+}
+
 .container .welcome-message {
   grid-area: wm; /* welcome message */
   height: 100%;
@@ -136,7 +142,7 @@ body.swal2-height-auto {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
+  /* text-align: center; */
 
   font-family: Poppins;
   font-style: normal;

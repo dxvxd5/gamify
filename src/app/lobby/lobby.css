@@ -40,7 +40,7 @@
   width: 80px;
 }
 
-#lobby-view #player-row-container {
+#player-row-container {
   grid-area: st;
 
   height: fit-content;
@@ -76,8 +76,7 @@
 
 #lobby-view #player-row-container .row figure {
   animation-duration: 600ms;
-  /* pop-up keyframes are defined in global.css because
-  its used in over views too */
+  /* pop-up keyframes are defined in global.css */
   animation-name: pop-up;
 }
 
@@ -92,7 +91,6 @@
 
 #lobby-view #waiting_message p {
   background: #fefeff;
-  /* filter: drop-shadow(0px 2px 0px #f59ca5); */
   border: #f59ca5 solid 2px;
   padding: 5px;
 
