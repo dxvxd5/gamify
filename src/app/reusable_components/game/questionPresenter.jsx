@@ -4,7 +4,7 @@ import QuestionView from './questionView';
 import TimerPresenter from './timerPresenter';
 import SongPlayer from './songPlayer';
 import '../../../assets/css/global.css';
-import nyc from '../../../assets/audio/nyc.mp3';
+import quizSong from '../../../assets/audio/quiz_song.mp3';
 import ChoicesView from './choicesView';
 import AnswerView from './answerView';
 
@@ -36,7 +36,7 @@ function QuestionPresenter(props) {
         </div>
       ) : (
         <audio autoPlay controls style={{ display: 'none' }}>
-          <source src={nyc} type="audio/mp3" />
+          <source src={quizSong} type="audio/mp3" />
           <track kind="captions" />
         </audio>
       )}
