@@ -60,7 +60,8 @@ export default function lobbyView({
   return (
     <div className="container" id="lobby-view">
       <div className="welcome-message">
-        Welcome to the {roomName} room! <br />
+        Welcome to the {roomName} room!
+        <br />
         <div>
           <button
             id="copy_button"
@@ -105,7 +106,7 @@ export default function lobbyView({
         </div>
       </div>
       <div id="player-row-container">
-        <div className="message">Your friends are coming</div>
+        <div className="message">Players</div>
         {players ? (
           <div className="row">
             {Object.keys(players).map((player) => (
