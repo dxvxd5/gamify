@@ -4,7 +4,7 @@ import TimerView from './timerView';
 
 function TimerPresenter({ showAnswer, showNextQ, isChoiceCorrect }) {
   const initialMinute = 0;
-  const initialSeconds = 10;
+  const initialSeconds = 9;
   const [flag, setFlag] = React.useState(true);
   const [minutes, setMinutes] = React.useState(initialMinute);
   const [seconds, setSeconds] = React.useState(initialSeconds);
