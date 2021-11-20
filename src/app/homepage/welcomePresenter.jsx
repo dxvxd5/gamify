@@ -46,11 +46,15 @@ const WelcomePresenter = function ({ model }) {
       .queue([
         {
           title: 'Room name',
-          text: 'Give your room a name (be creative 😉).',
+          text: 'Give your room a name (10 characters maximum).',
           input: 'text',
           confirmButtonText: 'Next &rarr;',
-          inputValidator: (value) =>
-            value ? false : 'You need to enter a room name',
+          inputValidator: (value) => {
+            if (!value) return 'You need to enter a room name';
+            if (value.length > 10)
+              return 'The name must be less than 10 characters long';
+            return false;
+          },
         },
         {
           title: 'Room ID',
