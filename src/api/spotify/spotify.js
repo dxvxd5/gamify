@@ -174,9 +174,9 @@ const SpotifyApi = {
     }
 
     // Out of the while loop, songList contains at least one song with a preview
-    // which index is songWithPreviewIdx
+    // whose index is songWithPreviewIdx
     // But we need to return four songs
-    const i = songWithPreviewIdx >= 5 ? 0 : 5;
+    const i = songWithPreviewIdx < 5 ? 5 : 0;
     return [
       // The song with the preview is always the first
       songList[songWithPreviewIdx],
