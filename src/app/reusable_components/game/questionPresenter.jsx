@@ -21,6 +21,7 @@ function QuestionPresenter(props) {
   function next() {
     nextQuestion();
     setButtonState(false);
+    updateCurrChoice(false);
   }
 
   return (
